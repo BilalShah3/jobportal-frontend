@@ -18,7 +18,6 @@ export async function middleware(NextRequest) {
   // const country = req.geo.country
 
   const url = NextRequest.nextUrl;
-  console.log(url)
   let changed = false;
 
   url.searchParams.forEach((param, key) => {
