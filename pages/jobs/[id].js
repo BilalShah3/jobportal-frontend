@@ -1,10 +1,6 @@
 import Layout from "../../components/layout/Layout";
 import NotFound from "../../components/layout/NotFound";
-<<<<<<< HEAD
 import JobDetails from "../../components/job/JobDetails.js";
-=======
-import JobDetails from "../../components/Job/JobDetails.js";
->>>>>>> 70308ec9ea5c13a0b338ecdb482dc21ca658a48d
 import { isAuthenticatedUser } from "../../utils/isAuthenticated";
 
 import axios from "axios";
@@ -20,11 +16,7 @@ if (error?.includes("Not found")) return <NotFound />;
 }
 
 export async function getServerSideProps({ req, params }) {
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 70308ec9ea5c13a0b338ecdb482dc21ca658a48d
   const access_token = req.cookies.access;
 
   const user = await isAuthenticatedUser(access_token);
@@ -38,10 +30,6 @@ export async function getServerSideProps({ req, params }) {
     };
   }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 70308ec9ea5c13a0b338ecdb482dc21ca658a48d
   try {
     const res = await axios.get(
       `${process.env.API_URL}/api/jobs/${params.id}/`
