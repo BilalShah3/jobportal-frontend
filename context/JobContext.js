@@ -99,19 +99,20 @@ export const JobProvider = ({ children }) => {
   // Check job applied
   const checkJobApplied = async (id, access_token) => {
     try {
-      setLoading(true);
+        setLoading(true);
 
-      const res = await axios.get(
-        `${process.env.API_URL}/api/jobs/${id}/check/`,
-        {
-          headers: {
-            Authorization: `Bearer ${access_token}`,
-          },
-        }
-      );
+        const res = await axios.get(
+          `${process.env.API_URL}/api/jobs/${id}/check/`,
+          {
+            headers: {
+              Authorization: `Bearer ${access_token}`,
+            },
+          }
+        );
 
-      setLoading(false);
-      setApplied(res.data);
+        setApplied(res.data);
+        setLoading(false);
+      
     } catch (error) {
       setLoading(false);
       setError(
