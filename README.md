@@ -1,3 +1,37 @@
+# Features
+
+Below are some features that will add to this production-ready app:
+
+Add the Jobs resource
+
+Generating Coordinates of address
+
+Adding Pagination and Filtration
+
+Complete Authentication with Simple JWT
+
+Protecting Routes from Unauthenticated Users
+
+Uploading files to AWS S3
+
+Renders Maps with Mapquest
+
+Custom Exception Handling
+
+Server Side Rendering with Next.js
+
+Complete the section for Employer
+
+Apply to a Job
+
+Posting new Jobs
+
+Handling Candidates for a Job
+
+Generate Topic Stats like Java
+
+Deploy app on Heroku & Vercel
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 You can view the site demo here  https://nookri.vercel.app/
