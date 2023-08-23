@@ -1,7 +1,5 @@
 # Features
 
-Below are some features that will add to this production-ready app:
-
 Add the Jobs resource
 
 Generating Coordinates of address
